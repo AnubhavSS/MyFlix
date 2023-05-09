@@ -2,8 +2,13 @@ import React from 'react'
 import Link from 'next/link'
 import MovieCard from '../components/MovieCard';
 import styles from '../styles/common.module.css'
+
+export const metadata = {
+  title: 'MyFlix-Movie',
+  description: 'Read about movies',
+}
 const Movie = async() => {
-await new Promise(resolve=>setTimeout(resolve,2000))
+
 
   const url = process.env.RAPID;
   const options = {
@@ -27,7 +32,7 @@ await new Promise(resolve=>setTimeout(resolve,2000))
       <div className={styles.card_section}>
       {
         main_data.map(item=>{
-           return <MovieCard key={item.id} {...item}/>
+           return <MovieCard key={item.id} {...item} id={item.jawSummary.id} title={item.jawSummary.title} synopsis={item.jawSummary.synopsis} bgUrl={item.jawSummary.backgroundImage.url} type={'movie'}/>
         })
       }
       </div></div>

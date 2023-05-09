@@ -1,14 +1,15 @@
+'use client'
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import styles from '../styles/common.module.css'
-const MovieCard = (item) => {
-    const {id,type,title,synopsis}=item.jawSummary
+const MovieCard = ({id,title,synopsis,bgUrl,type}) => {
+  
   return (
     <>
     <div className={styles.card}>
 <div className={styles.card_image}>
-<Image src={item.jawSummary.backgroundImage.url} alt={title} width={260} height={200} />
+<Image src={bgUrl} alt={title} width={260} height={200} />
 </div>
 
 <div className={styles.card_data}>
@@ -17,7 +18,7 @@ const MovieCard = (item) => {
                         {`${synopsis.substring(0,66)} ...`}
                     </p>
 
-                    <Link href={`/movie/${id}`}>
+                    <Link href={`/movie/${id}-${type}`}>
                         <button>
                             Read More
                         </button>

@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ['latin'] })
 export default function Home() {
   return (
     <>
-    <Hero title={'LETS WATCH MOVIE TOGETHER'} imageUrl={'/home.svg'}/>
+    <Hero title={"LET'S READ MOVIE/ANIME TOGETHER"} imageUrl={'/adobe.png'}/>
     </>
   )
 }

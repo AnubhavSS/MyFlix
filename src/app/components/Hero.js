@@ -21,7 +21,7 @@ const Hero = ({ title, imageUrl }) => {
             <h1>{title}</h1>
             <p> From award-winning dramas to blockbuster action movies, we&apos;ve got you covered. Browse
               our
-              selection of the latest and greatest movies, and find your new favorite today.
+              selection of the latest and greatest movies and animes, and find your new favorite today.
             </p>
             <Link href="/movie">
               <button className={mulish.className}>
