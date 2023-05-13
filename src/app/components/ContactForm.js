@@ -1,7 +1,7 @@
   'use client'
   
   import React,{useState} from 'react'
-import styles from '../contact/page'
+import styles from '../contact/contact.module.css'
 import {Mulish} from "next/font/google";
 const mulish = Mulish({
     subsets: ['latin'],
