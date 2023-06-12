@@ -8,7 +8,8 @@ const Contact = () => {
     <ContactCard />
 
         <section className={styles.contact_section}>
-            <h2>We'd love to hear <span> from you </span></h2>// eslint-disable-line no-console
+      
+            <h2>We&apos;d love to hear <span> from you </span></h2>
 
             <ContactForm/>
         </section>

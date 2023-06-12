@@ -15,7 +15,7 @@ const Anime = async() => {
 const options = {
 	method: 'GET',
 	headers: {
-		'X-RapidAPI-Key': 'e772aa741bmsh2676eeb4e3fd77ap103333jsnc2f52d93fadc',
+		'X-RapidAPI-Key':  process.env.NEXT_PUBLIC_X_RapidAPI_Key,
 		'X-RapidAPI-Host': 'anime-db.p.rapidapi.com'
 	}
 };
